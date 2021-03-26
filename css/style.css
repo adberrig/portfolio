@@ -7,6 +7,7 @@
 .intro{
   grid-column: 2 / span 4;
   text-align:center;
+  padding-bottom: 20px;
 }
 .intro-image{
   grid-column: 2/span 4;
