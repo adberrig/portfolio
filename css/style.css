@@ -6,9 +6,7 @@
 
 .intro{
   grid-column: 2 / span 4;
-  text-align:center;
-  padding-bottom: 20px;
-}
+  text-align:center;}
 .intro-image{
   grid-column: 2/span 4;
   max-height: 400px;
@@ -199,7 +197,6 @@ a:active{
 	color: black;
 }
 .currentLink {
-    color:black;
     font-weight: bold;
     text-decoration: underline;
 }
