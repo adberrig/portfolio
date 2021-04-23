@@ -42,6 +42,22 @@ header{
 body{
 	background-color: #EEEEEE;
 }
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:60px;
+  color: black;
+  text-decoration-style: solid;
+}
 .contact-contain{
 	 display: grid;
 	 grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -86,6 +102,9 @@ h2{
 .instagram-text{
 	grid-row: 5;
 	grid-column: 4/span 7
+}
+.formcontact{
+	display: none;
 }
 
 .about-contain{
@@ -275,6 +294,11 @@ body{
 	grid-row: 8;
 	grid-column: 4/span 7
 	}
+.formcontact{
+	display: initial;
+	grid-row: 9;
+	grid-column: 4;
+}
 }
 a.skip{
   background: white;
@@ -291,4 +315,196 @@ a.skip:focus{
   top:60px;
   color: black;
   text-decoration-style: solid;
+}
+
+@media screen and (min-width: 992px){
+.experience {
+	font-size: 32px;
+	padding-bottom: 60px;	
+	}
+.experiencetwo{
+	font-size: 32px;
+	padding-bottom: 60px;
+	}
+.experiencethree{
+	font-size: 32px;
+	padding-bottom: 60px;
+	}
+.experiencefour{
+	font-size: 32px;
+	padding-bottom: 60px;
+	}
+.experiencefive{
+	font-size: 32px;
+	padding-bottom: 60px;
+	}
+.experiencesix{
+	font-size: 32px;
+	padding-bottom: 60px;
+	}
+.about-contain{
+	font-size: 45px;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.adobeXD-image{
+	grid-row: 1;
+	grid-column: 2
+}
+.adobeAi-image{
+	grid-row: 2;
+	grid-column: 2
+}
+.adobePs-image{
+	grid-row: 3;
+	grid-column: 2
+}
+.adobePr-image{
+	grid-row: 4;
+	grid-column: 2
+}
+.editing-image{
+	grid-row: 9;
+	grid-column: 2
+}
+.cplusplus-image{
+	grid-row: 6;
+	grid-column: 2
+}
+.htmlcss-image{
+	grid-row: 7;
+	grid-column: 2
+}
+.python-image{
+	grid-row: 8;
+	grid-column: 2
+}
+.uxdesign-image{
+	grid-row: 5;
+	grid-column: 2
+}
+.adobeXD-text{
+	grid-row: 1;
+	grid-column: 3
+}
+.adobeAi-text{
+	grid-row: 2;
+	grid-column: 3
+}
+.adobePs-text{
+	grid-row: 3;
+	grid-column: 3
+}
+.adobePr-text{
+	grid-row: 4;
+	grid-column: 3
+}
+.editing-text{
+	grid-row: 9;
+	grid-column: 3
+}
+.cplusplus-text{
+	grid-row: 6;
+	grid-column: 3
+}
+.htmlcss-text{
+	grid-row: 7;
+	grid-column: 3
+}
+.python-text{
+	grid-row: 8;
+	grid-column: 3
+}
+.uxdesign-text{
+	grid-row: 5;
+	grid-column: 3
+}
+.intro-image{
+	padding-bottom: 150px;
+}
+.contact-contain{
+	 display: grid;
+	 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+.phone-image{
+	grid-row: 2;
+	grid-column: 3 
+	}
+.linkdin-image{
+	grid-row: 4;
+	grid-column: 3
+	}
+.email-image{
+	grid-row: 6;
+	grid-column: 3
+	}
+.instagram-image{
+	grid-row: 8;
+	grid-column: 3
+	}
+.phone-text{
+	font-size: 30px;
+	grid-row: 2;
+	grid-column: 5/span 7
+	}
+.linkdin-text{
+	font-size: 30px;
+	grid-row: 4;
+	grid-column: 5/span 7
+	}
+.email-text{
+	font-size: 30px;
+	grid-row: 6;
+	grid-column: 5/span 7
+	}
+.instagram-text{
+	font-size: 30px;
+	grid-row: 8;
+	grid-column: 5/span 7
+	}
+.formcontact{
+	display: initial;
+	grid-row: 10;
+	grid-column: 4;
+}
+.bodyskills{
+	background-image: url("../images/skills4.jpg");
+	background-attachment: fixed;   
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-color: #EEEEEE;
+}
+.resume-text{
+	animation-name: resumeanimation;
+	animation-duration: 8s;
+}
+@-webkit-keyframes resumeanimation{
+}
+@keyframes resumeanimation{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto;
+  }
+  .resume-text{
+  animation-name: none;
+  }
+  .skip a{
+    -webkit-transition: none;
+    transition: none;   
+   }
+  .bodyskills{
+    background-attachment: initial;
+  }
 }

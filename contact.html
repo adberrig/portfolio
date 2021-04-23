@@ -11,7 +11,7 @@
 	</head>
 	<body>
     	<header>
-        <a class = "skip" href="contact.html">Skip to Main Content</a>
+        <a class = "skip" href="#main">Skip to Main Content</a>
      		<nav>
       			<ul class="nav_links">
         			<li class="nav_item"><a href="index.html">Adrian Berrigan</a></li>
@@ -21,7 +21,7 @@
         		</ul>
       		</nav>
     	</header>
-    <main class="contact-contain">
+    <main class="contact-contain" id ="main">
     	<div class="phone-image">
       		<img src="images/phone.png" width="100" height= "100" alt=""/>
     	</div>
@@ -57,6 +57,23 @@
     		<br/>
       		<h1>adrianberrigan</h1>
     	</div>
+        <div class="formcontact">
+          <form
+          action="https://formspree.io/f/xleadkjy"
+          method="POST"
+          >
+          <label>
+          Your email:
+          <input type="email" name="_replyto">
+          </label>
+          <br/>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <button type="submit">Send</button>
+          </form>
+        </div>
     <footer>
       <p>Adrian A. Berrigan 2021</p>
       <br/>
