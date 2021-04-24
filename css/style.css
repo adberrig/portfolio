@@ -218,6 +218,7 @@ a:active{
 .currentLink {
     font-weight: bold;
     text-decoration: underline;
+    font-size: 115%;
 }
 body{
 	font-family: 'Playfair Display', serif;
